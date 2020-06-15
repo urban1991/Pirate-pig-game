@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'MedievalSharp', cursive;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url(/public/back1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(/public/back1.jpg);
+  background-size: cover;
+  background-position: center;
+  line-height: 1.6;
+  color: #996515;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 80vw;
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr minmax(min-content, 20rem) 1fr;
+      grid-template-columns: 1fr minmax(-webkit-min-content, 20rem) 1fr;
+      grid-template-columns: 1fr minmax(min-content, 20rem) 1fr;
+  -ms-grid-rows: 1fr 1fr 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+}
+
+.player {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player--0 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.player--1 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+}
+
+.player__name {
+  font-size: 5rem;
+  letter-spacing: 3px;
+}
+
+.player__score {
+  font-size: 10rem;
+  text-align: center;
+  color: #4b0101;
+}
+
+.player__round-box {
+  text-align: center;
+}
+
+.player__label {
+  font-size: 2rem;
+}
+
+.player__round-score {
+  font-size: 7rem;
+  color: #4b0101;
+}
+
+.diceImg {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 13rem;
+  -webkit-box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  font-family: 'MedievalSharp', cursive;
+  letter-spacing: .3rem;
+  border: none;
+  font-size: 2rem;
+  color: #CEB829;
+  background: none;
+  place-self: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  letter-spacing: .5rem;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn i {
+  font-size: 4rem;
+  margin-right: 1rem;
+  color: #4b0101;
+}
+
+.btn-new {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.win-score {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1rem;
+  width: 80%;
+  font-size: 2rem;
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #4b0101;
+  border: 1px solid  #4b0101;
+  border-radius: 2px;
+}
+
+.win-score:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*# sourceMappingURL=main.css.map */
